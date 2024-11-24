@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllClear - Clear Spaces & Fresh Starts</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #4A90E2; color: white; padding: 20px; text-align: center; }
+        header img { max-width: 150px; }
+        nav { text-align: center; background: #333; padding: 10px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 16px; }
+        nav a:hover { text-decoration: underline; }
+        section { padding: 20px; max-width: 1000px; margin: auto; }
+        footer { background: #333; color: white; text-align: center; padding: 10px 0; margin-top: 20px; }
+        button { background: #4A90E2; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        button:hover { background: #357ABD; }
+        .banner { text-align: center; padding: 50px 20px; background: #f5f5f5; }
+        .services { display: flex; justify-content: space-around; margin-top: 20px; }
+        .service { padding: 10px; width: 30%; background: #f9f9f9; border: 1px solid #ddd; text-align: center; }
+        .service h3 { color: #4A90E2; }
+        .language-switch { position: absolute; top: 10px; right: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="language-switch">
+        <a href="?lang=de">Deutsch</a> | <a href="?lang=en">English</a> | <a href="?lang=es">Español</a>
+    </div>
+    <h1>AllClear</h1>
+    <p>Clear Spaces & Fresh Starts</p>
+</header>
+
+<nav>
+    <a href="#services">Dienstleistungen</a>
+    <a href="#about">Über uns</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<section class="banner">
+    <h2>Clear Spaces & Fresh Starts</h2>
+    <p>Ihr zuverlässiger Partner für Entrümpelung, Renovierung und Reinigung</p>
+    <button onclick="document.location.href='#contact'">Kostenloses Angebot anfordern</button>
+</section>
+
+<section id="services">
+    <h2>Dienstleistungen</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Entrümpelung</h3>
+            <p>Wir räumen Wohnungen, Häuser und Gewerbeobjekte zuverlässig und termingerecht.</p>
+        </div>
+        <div class="service">
+            <h3>Renovierung</h3>
+            <p>Von Malerarbeiten bis hin zu kleinen Reparaturen – alles aus einer Hand.</p>
+        </div>
+        <div class="service">
+            <h3>Reinigung</h3>
+            <p>Gründliche Endreinigung und Objektpflege für ein perfektes Ergebnis.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>Über uns</h2>
+    <p>AllClear steht für Qualität, Zuverlässigkeit und professionelle Abwicklung. Mit jahrelanger Erfahrung bieten wir Ihnen einen umfassenden Service für klare Räume und einen frischen Start.</p>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">E-Mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Nachricht:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <button type="submit">Absenden</button>
+    </form>
+    <p>Telefon: +49 30 80955050</p>
+    <p>E-Mail: info@allclear24.com</p>
+</section>
+
+<footer>
+    <p>© 2024 AllClear - Clear Spaces & Fresh Starts</p>
+</footer>
+
+</body>
+</html>
